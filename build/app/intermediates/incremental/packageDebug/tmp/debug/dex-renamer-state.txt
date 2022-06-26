@@ -1,0 +1,4 @@
+#Sun Jun 26 15:55:44 NPT 2022
+base.0=D\:\\RAN\\RAN mobile app\\RAN-APP\\app\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

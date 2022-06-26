@@ -1,0 +1,135 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.app"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+9        android:targetSdkVersion="31" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->D:\RAN\RAN mobile app\RAN-APP\app\android\app\src\main\AndroidManifest.xml:3:5-67
+14-->D:\RAN\RAN mobile app\RAN-APP\app\android\app\src\main\AndroidManifest.xml:3:22-64
+15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+15-->D:\RAN\RAN mobile app\RAN-APP\app\android\app\src\main\AndroidManifest.xml:4:5-80
+15-->D:\RAN\RAN mobile app\RAN-APP\app\android\app\src\main\AndroidManifest.xml:4:22-77
+16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+16-->D:\RAN\RAN mobile app\RAN-APP\app\android\app\src\main\AndroidManifest.xml:5:5-81
+16-->D:\RAN\RAN mobile app\RAN-APP\app\android\app\src\main\AndroidManifest.xml:5:22-78
+17    <uses-permission android:name="android.permission.CAMERA" />
+17-->D:\RAN\RAN mobile app\RAN-APP\app\android\app\src\main\AndroidManifest.xml:6:5-65
+17-->D:\RAN\RAN mobile app\RAN-APP\app\android\app\src\main\AndroidManifest.xml:6:22-62
+18
+19    <queries>
+19-->[:file_picker] D:\RAN\RAN mobile app\RAN-APP\app\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-15:15
+20        <intent>
+20-->[:file_picker] D:\RAN\RAN mobile app\RAN-APP\app\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:10:9-14:18
+21            <action android:name="android.intent.action.GET_CONTENT" />
+21-->[:file_picker] D:\RAN\RAN mobile app\RAN-APP\app\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-72
+21-->[:file_picker] D:\RAN\RAN mobile app\RAN-APP\app\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:11:21-69
+22
+23            <data android:mimeType="*/*" />
+23-->[:file_picker] D:\RAN\RAN mobile app\RAN-APP\app\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-44
+23-->[:file_picker] D:\RAN\RAN mobile app\RAN-APP\app\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:13:19-41
+24        </intent>
+25    </queries>
+26
+27    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+27-->[:open_file] D:\RAN\RAN mobile app\RAN-APP\app\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-83
+27-->[:open_file] D:\RAN\RAN mobile app\RAN-APP\app\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-80
+28
+29    <application
+30        android:name="android.app.Application"
+31        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+31-->[androidx.core:core:1.8.0] C:\Users\nepal\.gradle\caches\transforms-2\files-2.1\8e86e615f21ac3758e97e94e18045107\core-1.8.0\AndroidManifest.xml:24:18-86
+32        android:debuggable="true"
+33        android:icon="@mipmap/ic_launcher"
+34        android:label="app" >
+35        <activity
+36            android:name="com.example.app.MainActivity"
+37            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+38            android:exported="true"
+39            android:hardwareAccelerated="true"
+40            android:launchMode="singleTop"
+41            android:theme="@style/LaunchTheme"
+42            android:usesCleartextTraffic="true"
+43            android:windowSoftInputMode="adjustResize" >
+44
+45            <!--
+46                 Specifies an Android theme to apply to this Activity as soon as
+47                 the Android process has started. This theme is visible to the user
+48                 while the Flutter UI initializes. After that, this theme continues
+49                 to determine the Window background behind the Flutter UI.
+50            -->
+51            <meta-data
+52                android:name="io.flutter.embedding.android.NormalTheme"
+53                android:resource="@style/NormalTheme" />
+54
+55            <intent-filter>
+56                <action android:name="android.intent.action.MAIN" />
+57
+58                <category android:name="android.intent.category.LAUNCHER" />
+59            </intent-filter>
+60        </activity>
+61        <!--
+62             Don't delete the meta-data below.
+63             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+64        -->
+65        <meta-data
+66            android:name="flutterEmbedding"
+67            android:value="2" />
+68
+69        <provider
+69-->[:image_picker_android] D:\RAN\RAN mobile app\RAN-APP\app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-16:20
+70            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+70-->[:image_picker_android] D:\RAN\RAN mobile app\RAN-APP\app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-82
+71            android:authorities="com.example.app.flutter.image_provider"
+71-->[:image_picker_android] D:\RAN\RAN mobile app\RAN-APP\app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-74
+72            android:exported="false"
+72-->[:image_picker_android] D:\RAN\RAN mobile app\RAN-APP\app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-37
+73            android:grantUriPermissions="true" >
+73-->[:image_picker_android] D:\RAN\RAN mobile app\RAN-APP\app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-47
+74            <meta-data
+74-->[:image_picker_android] D:\RAN\RAN mobile app\RAN-APP\app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-15:75
+75                android:name="android.support.FILE_PROVIDER_PATHS"
+75-->[:image_picker_android] D:\RAN\RAN mobile app\RAN-APP\app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:14:17-67
+76                android:resource="@xml/flutter_image_picker_file_paths" />
+76-->[:image_picker_android] D:\RAN\RAN mobile app\RAN-APP\app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:15:17-72
+77        </provider>
+78        <provider
+78-->[:open_file] D:\RAN\RAN mobile app\RAN-APP\app\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-21:20
+79            android:name="com.crazecoder.openfile.FileProvider"
+79-->[:open_file] D:\RAN\RAN mobile app\RAN-APP\app\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-64
+80            android:authorities="com.example.app.fileProvider.com.crazecoder.openfile"
+80-->[:open_file] D:\RAN\RAN mobile app\RAN-APP\app\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-88
+81            android:exported="false"
+81-->[:open_file] D:\RAN\RAN mobile app\RAN-APP\app\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-37
+82            android:grantUriPermissions="true" >
+82-->[:open_file] D:\RAN\RAN mobile app\RAN-APP\app\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-47
+83            <meta-data
+83-->[:image_picker_android] D:\RAN\RAN mobile app\RAN-APP\app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-15:75
+84                android:name="android.support.FILE_PROVIDER_PATHS"
+84-->[:image_picker_android] D:\RAN\RAN mobile app\RAN-APP\app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:14:17-67
+85                android:resource="@xml/filepaths" />
+85-->[:image_picker_android] D:\RAN\RAN mobile app\RAN-APP\app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:15:17-72
+86        </provider>
+87
+88        <uses-library
+88-->[androidx.window:window:1.0.0-beta04] C:\Users\nepal\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+89            android:name="androidx.window.extensions"
+89-->[androidx.window:window:1.0.0-beta04] C:\Users\nepal\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+90            android:required="false" />
+90-->[androidx.window:window:1.0.0-beta04] C:\Users\nepal\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+91        <uses-library
+91-->[androidx.window:window:1.0.0-beta04] C:\Users\nepal\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+92            android:name="androidx.window.sidecar"
+92-->[androidx.window:window:1.0.0-beta04] C:\Users\nepal\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+93            android:required="false" />
+93-->[androidx.window:window:1.0.0-beta04] C:\Users\nepal\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+94    </application>
+95
+96</manifest>
